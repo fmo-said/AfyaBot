@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+
+- rule: Say kwaheri anytime the user says kwaheri
+  steps:
+  - intent: kwaheri
+  - action: utter_kwaheri
+
+- rule: Say Naitwa fatma rafiki yako wa akili bandia
+  steps:
+  - intent: whoami
+  - action: utter_whoami
+
+- rule: say pima kiwango cha msongo wa mawazo
+  steps:
+  - intent: mawazo
+  - action: action_screen_phq9
+
+- rule: say 'pima kiwango cha wasiwasi'whenever the user says'wasiwasi'
+  steps:
+  - intent: wasiwasi
+  - action: action_screen_gad7

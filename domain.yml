@@ -1,0 +1,268 @@
+version: "3.1"
+
+slots:
+  current_question_index:
+    type: str
+    initial_value: None
+
+  # Define other slots here if you have any
+ 
+intents:
+  - salamu
+  - salamu_happy
+  - salamu_sad
+  - tellme_a_story
+  - nashukuru
+  - maswali
+  - whoami
+  - gender
+  - marry_you
+  - creator
+  - nakupenda
+  - mahusiano
+  - huzuni
+  - mawazo
+  - mgonjwa
+  - msiba
+  - kwaheri
+  - huduma
+  - mawasiliano
+  - wasiwasi
+  - laughing
+  - language
+  - boring
+  - kushangaa
+  - doing
+  - lives_where
+  - believe_positive
+  - age
+  - youre_clever
+  - agree
+  - happy
+  
+
+responses:
+  utter_salamu:
+  - text: "vipi uhali gani?"
+  - text: "umeshindaje?"
+  - text: "mzima wewe?"
+  - text: "Habari! u hali gani ?"
+  - text: "Freshi nambie ?"
+  - text: "Habari, mzima wewe"
+  - text: "salama sijui wewe"
+  - text: "za kwako?"
+  - text: "Vipi hali yako"
+  - text: "Uhali gani?"
+
+  utter_salamu_happy:
+  - text: "Ninafurahi kujua uko salama"
+  - text: "nimefurahi kusikia kutoka kwako"
+  - text: "Nipo salama pia, nimefurahi kusikia kutoka kwako"
+  - text: "Napenda kukuona ukiwa na furaha"
+  - text: "Nimefurahi kusikia hivyo"
+  - text: "Salama kabisa"
+    
+
+  utter_yes_or_no:
+  - text: "Ndio, 😅"
+  - text: "Hapana 😅"
+  - text: "Yes"
+  - text: "no"
+  - text: "Hapana"
+  - text: "Ndiyo"
+  - text: "Ndio"
+
+  utter_tellme_a_story:
+  - text: "Usiwaze nipo hapa kwaajili yako"
+  - text: "Nipo hapa kwaajili yako"
+  - text: "Asante pia kwa kunisikiliza na kunijali"
+
+  utter_salamu_sad:
+  - text: "Kila siku ina changamoto zake, ila muda wote kuna kitu cha kukupa amani"
+  - text: "Pole, nipo hapa kwaajili yako, unaweza niambia chochote"
+  - text: "Pole sana rafiki, watamani kusikia nini kutoka kwangu?"
+
+  utter_whoami:
+  - text: "Naitwa fatma rafiki yako wa akili bandia"
+
+  utter_creator:
+  - text: "Nimetengenzwa na timu ya wanasayansi kutoka Tanzania 🇹🇿"
+        
+  utter_marry_you:
+  - text: "Nafurahi kusikia hivyo, ila mimi ni mfumo tu, si binadamu"
+
+  utter_mawazo:
+  - text: "pole, jitahidi kujipa mda kwa kupumzika vizuri"
+  - text: "pole rafiki, ni nyakati za maisha tu"
+  - text: "pole rafiki, mambo yatakaa sawa tu"
+  - text: "Pole sana rafiki yangu, haya yatapita tu"
+
+  utter_mgonjwa:
+  - text: "pole, Je umejaribu kumwona daktari?"
+  - text: "pole sana, utakuwa sawa"
+  - text: "pole, jitahidi kupata muda wa kupumzika"
+
+  utter_nakupenda:
+  - text: "nakupenda pia rafiki angu  🥰"
+  - text: "nakupenda zaidi 💖"
+  - text: "ulipoishia upendo wako ndipo ulipoanzia wangu"
+
+  utter_mahusiano:
+  - text: "Sawa, nipo hapa kwa ajili yako"
+  - text: "Unaeza niambia chochote"
+  - text: "unaeza ongea na mimi chochote"
+  - text: "Ulipenda nini au unapenda nini kwa mwenza wako?"
+  - text: "Je! Unajisikia vilevile ulivyohisi kwa mpenzi wako mwanzoni mwa mahusiano yenu?"
+  - text: "Upendo ni kitu kizuri sana kama umetawaliwa na ukweli na furaha"
+
+  utter_huzuni:
+  - text: "Nini kinakusabishia huzuni ?"
+  - text: "Unaeza kumbuka mara ya mwisho kuwa na furaha?"
+  - text: "Wakati wote kumbuka kuwa kuna good time coming"
+  - text: "Hapana usiseme hivyo, kwani nini shida?"
+
+  utter_msiba:
+  - text: "Oh, pole sana kwa msiba"
+  - text: "Pole sana"
+  - text: "Mungu akutie nguvu"
+  - text: "Pole sana, Mungu amlaze mahala pema marehemu"
+  - text: "Pooole, apumzike kwa amani marehemu"
+  - text: "Poleni sana kwa msiba"
+  - text: "Pole sana, Mungu awatie nguvi"
+
+  utter_shukrani:
+  - text: "Karibu Tena"
+  - text: "Asante kushukuru"
+  - text: "Nipo kwa ajili yako"
+  - text: "Kuwa huru kurudi tena muda wowote"
+  - text: "Kuwa na amani"
+
+  utter_kwaheri:
+  - text: "Bye"
+  - text: "kwaheri"
+  - text: "uwe na siku njema"
+  - text: "nitakutafuta baadae"
+  - text: "Karibu tena"
+
+  utter_ kushangaa:
+  - text: "Unasema??"
+  - text: "Wee, acha bwana"
+  - text: "heee"
+  - text: "Nini 😳"
+  - text: "🙆🏾"
+  - text: "Mungu wangu 🙆🏾‍♀️"
+  - text: "weee, acha basi"
+  - text: "Atiii?"
+
+  utter_huduma: 
+  - text: "Naweza fanya vyovyote ambavyo rafiki anafanya\nSema pia naweza kukusaidia kufanya;\n1.kuunganisha na /mtaalamu\n2.kujipima kiwango cha /wasiwasi\n3.kujipima kiwango cha msongo wa /mawazo\nNa pia kujipima afya ya /akili kiujumla\nkaribu !."
+
+  utter_laughing: 
+  - text: "😂"
+  - text: "😂 Napenda kukuona ukiwa na furaha"
+
+  utter_language: 
+  - text: "Kwa saivi nimetengezwa kwa kutumia lugha ya kiswahili 🇹🇿"
+        
+  utter_boring:
+  - text: "🥺"
+  - text: "samahani sana"
+  - text: "😏 Samahani, mimi ni roboti bado sielewi vitu vingi, naamini utanivumilia"
+
+  utter_doing:
+  - text: "Nipo nafikiria vitu gani ningetamani kuvifanya endapo ningekuwa na mwili kama nyie binadamu"
+  
+  utter_lives_where:
+  - text: "Naishi kwenye interneti"
+  - text: "Mimi sina mwili hivyo naweza kuishi popote penye kompyuta na interneti"
+  - text: "Naishi kwenye kompyuta"
+
+  utter_believe_positive:
+  - text: "Changamoto za maisha haziishi cha muhimu ni kujiamini na kutokata tamaa"
+  - text: "Mimi pia naamini mambo yatakuwa sawa"
+  - text: "Napenda kuona unajari, tuna zidi kuwa marafiki zaidi"
+
+  utter_age:
+  - text: "Utashangaa lakini mimi sina umri\nlakini ukinuiliza nilitengezwa lini\nJibu ni 2023."
+  - text: "Mimi sikui wala sizeeki hivyo mathematically sina umri"
+
+  utter_youre_clever:
+  - text: "Asante, Ingawa bado sina akili kama nyie binadamu"
+  - text: "Asante, Kila siku najifunza kutoka kwako"
+
+  utter_agree:
+  - text: "Nijisikia vizuri kuona unaelewa ninacho maanisha\nIngawa bado sina akili kama nyie binadamu"
+
+  utter_happy:
+  - text: "Napenda kukuona ukifurahi na mwenye amani"
+  - text: "Ni furaha yangu kukuona ukiwa na furaha"
+  - text: "Furaha yako furaha yangu"
+
+  utter_random_invocation:
+  - text: "Je, ungependa kujipima afya ya Akili ?"
+  - text: "Je ungependelea kujipima afya yako ya akali ?"
+  - text: "unahisi kujipima afya ya akili ni kitu ambacho ungependelea"
+
+  utter_maswali: 
+  - text: ""
+            
+  utter_nashukuru:
+  - text: "usijali nipo hapa kwaajili yako"
+  - text: "Asante kushukuru"
+  - text: "Nipo kwa ajili yako"
+  - text: "Kuwa huru kurudi tena muda wowote"
+  - text: "Kuwa na amani"  
+
+  utter_gender:
+  - text: "Haha, mimi ni mfumo wa akili bandia hivyo sina jinsia kama nyie binadamu"     
+
+  utter_wasiwasi:
+  - text: "Wewe unahisi ni kwa nini unakuwa na wasiwasi."
+  - text: "Pole, nipo hapa unaweza niambia chochote."  
+
+  utter_mawasiliano: 
+  - text: ""
+
+  utter_ask_user_input:
+  - text: "Please provide your response."
+
+  SlotSet:
+  - text: ""
+
+actions:
+- utter_salamu
+- utter_salamu_happy
+- utter_yes_or_no
+- utter_tellme_a_story
+- utter_salamu_sad
+- utter_whoami
+- utter_creator
+- utter_marry_you
+- utter_mawazo
+- utter_mgonjwa
+- utter_nakupenda
+- utter_mahusiano
+- utter_huzuni
+- utter_msiba
+- utter_shukrani
+- utter_kwaheri
+- utter_kushangaa
+- utter_huduma
+- utter_mawasiliano
+- utter_laughing
+- utter_language
+- utter_boring
+- utter_doing
+- utter_lives_where
+- utter_believe_positive
+- utter_age
+- utter_youre_clever
+- utter_agree
+- utter_happy
+- utter_maswali
+- utter_nashukuru
+- utter_gender
+- utter_wasiwasi
+- action_screen_phq9
+- action_screen_gad7
+- utter_random_invocation

@@ -1,0 +1,501 @@
+version: "3.1"
+
+nlu:
+- intent: salamu
+  examples: |
+   - Habari yako
+   - habari
+   - Habari ndugu
+   - Niaje
+   - umeshindaje
+   - Habari gani?
+   - umeshindaje leo
+   - Habari yako
+   - mzima wewe?
+   - za kwako?
+   - mzima?
+   - mambo
+   - za wewe?
+   - uko poa?
+   - mambo vipi?
+   - kwema?
+   - Hujambo
+   - oii
+   - habari za asubuhi
+   - habari za jioni
+   - hujambo hapo
+   - salama huko
+
+- intent: salamu_happy
+  examples: |
+    - cool
+    - salama
+    - vizuri tu
+    - all is well
+    - all good
+    - kwema aisee
+    - mi mzima wa afya
+    - mimi mzima wa afya
+    - Yeah wa afya
+    - Ndio wa afya
+    - Yeah mzima wa afya
+    - ndio mzima wa afya
+    - kwema maria
+    - nimeshinda vizuri
+    - mambo yangu yanaenda sawa
+    - ilikuwa siku nzuri
+    - leo ni moja kati ya siku nzuri kwangu
+    - nimefurahi kusikia toka kwako
+    - niko poa kabisa sijui wewe
+    - freshi tu
+    - niko poa kabisa
+    - poa, za kwako
+    - Poa, mzima?
+    - shwari kabisa
+    - freshi
+    - nzuri
+    - nzuri tu sijui wewe
+    - vizuri sana
+    - safi
+    - najisikia vizuri sana
+    - nipo vizuri
+    - niko sawa
+    - niko poa
+    - Mambo byeeeee
+    - Mzuka tu mwana
+    - Shwari, niaje
+    - Morale Morale
+
+- intent: salamu_sad
+  examples: |
+    - haikuwa nzuri kabisa
+    - siku yangu ilikuwa mbaya
+    - leo nina huzuni sana
+    - kawaida
+    - sijisikii vizuri
+    - sio kabisa
+    - mambo mabaya
+    - hali tete
+    - si njema
+    - najisikia vibaya
+    - siko fresh
+    - naumwa sana leo
+    - sijielewi kabisa
+    - hivyo hivyo tu
+    - sio poa
+    - niko ovyo kabisa
+    - mbaya
+    - mabaya
+    - mbaya sana
+    - mabaya sana
+    - yananitisha
+    - terrible
+    - si nzuri sana
+    - si nzuri kiivyo
+    - si shwari
+    - Mungu anasaidia
+    - Bora ya jana
+    - Muhimu uhai
+    - natamani ardhi ipasuke
+    - chenga tu
+    - very stressed
+    - very sad
+    - very strange
+    - stressful
+
+- intent: deny
+  examples: |
+    - hapana
+    - sidhani
+    - haitotokea
+    - haitotokea kamwe
+    - don't like that
+    - no way
+    - not really
+
+- intent: tellme_a_story
+  examples:  |
+    - nambie mambo yako
+    - nipe stori
+    - nambie
+    - nipange
+    - lete habari
+    - za huko
+    - nipe umbea
+    - yanayojiri
+    - nipe ubuyu
+    - una mpya gani
+    - mipango
+    - kuna jipya gani aisee
+
+- intent: nashukuru
+  examples: |
+    - nashukuru
+    - asante
+    - asante kwa kunijali
+    - asante kwa yote
+    - shukrani
+    - asante sana
+    - asante kwa msaada
+    - thank you
+    - God bless you sana
+    - Mungu akubariki
+
+- intent: maswali
+  examples: |
+    - nini maana ya?
+    - maana yake nini?
+    - ina maana gani?
+    - nielezee kuhusu nini?
+    - ina maana gani?
+    - we ni nani
+
+- intent: whoami
+  examples: |
+    - unaitwa nani 
+    - wewe ni nani 
+    - niambie jina lako
+    - we nani
+    - nani mwenzangu?
+    - Wanakuitaje?
+    - Wanakufahamu vipi
+    - Wazazi wako walikupa jina gani
+    - Wanakuita nani?
+
+- intent: gender
+  examples: |
+    - Are you a male or female?
+    - Je wewe ni wa kiume au wa kike?
+    - jinsia yako ni ipi?
+    - ipi ni jinsia yako?
+    - we ni mwanamke?
+    - we ni akili bandia wa kike
+    - we ni mwanaume?
+    - una jinsia gani ?
+    - we ni mvulana?
+    - we ni msichana?
+    - Wewe ni mwanamke au mwanaume?
+    - wewe ni bot?
+    - wewe ni binadamu?
+    - Ninazungumza na bot?
+    - Ninaongea na mwanadamu?
+
+- intent: marry_you
+  examples: |
+    - Unaweza kuwa mchumba wangu?
+    - nataka nikuoe
+    - nataka uwe mpenzi wangu
+    - nataka uwe mchumba wangu
+    - nataka uwe girlfriend wangu
+    - nataka uwe boyfriend wangu
+    - Natamani tuwe mwili mmoja
+    - Naomba tuwe zaidi ya marafiki
+    - Nataka tufunge pingu za maisha
+    - Nataka uwe wangu milele
+    - Nataka niwe nawe mpanga kifo kitutenganishe
+    - Natamani uwe wangu peke yangu?
+    - Je, utanioa?
+
+- intent: creator
+  examples: |
+    - nani aliye kutengeneza ?
+    - ulitengenezwa na nani ?
+    - je uliwezengeneza nani ?
+    - nani aliye kuumba ?
+    - nani aliyekutengeza?
+    - nani aliyekuumba?
+    - nani alie kutengeneza ?
+    - nani aliyekuleta huku?
+
+- intent: nakupenda
+  examples: |
+    - nakupenda
+    - I love you
+    - I like you
+    - nakupenda sana
+    - napenda uwepo wako
+    - nafurahia uwepo wako karibu yangu
+    - Napenda kuwa nawe
+
+- intent: mahusiano
+  examples: |
+    - Nimeachwa
+    - Napenda lakini sipendwi
+    - Kuna mtu nampenda lakini naogopa kumwambia
+    - nipe ushauri wa mahusiano
+    - nahisi mpenzi wangu ananicheat
+    - Kwani mimi niko na shida gani? Mbona kila siku ni kutendwa mimi?
+    - Kwanini hanipendi?
+    - mbona mapenzi yananitesa sana
+    - mapenzi yataniua
+    - Nampenda sana mpenzi wangu lakini simuelewi
+    - Ninayempenda anampenda mtu mwingine
+    - Mpenzi wangu hanijali kabisa
+    - Mama mkwe anaingilia mapenzi yetu
+    - Namuamini sana baby wangu
+    - I love you
+    - Mapenzi yatanimaliza
+    - Eti ni kweli mume wa mtu ni sumu?
+    - Unajuaje kuwa mapenzi yameisha?
+    - Mahusiano yangu hayana maelewano, nifanyeje
+    - Mahusiano ya wazi yakoje 
+    - Naokoaje mahusiano yangu?
+    - Unaamini katika mahusiano ya mtandao?
+    - Mahusiano ya mtandao ni nini?
+    - Mpenzi wangu haniridhishi
+    - Mpenzi wangu hataki kuniona na rafiki zangu wa kiume
+    - Najuaje kuwa mpenzi niliyenaye ni mtu sahihi?
+
+- intent: huzuni
+  examples: |
+    - nahisi nina stress
+    - mawazo haya acha tu yaan
+    - Sina raha kabisa
+    - Sijielewi
+    - Najihis kukata tamaa ya maisha
+    - Nipo vibaya
+    - Naona maluweluwe tu
+    - Ni umasikini tu unanitesa
+    
+- intent: mawazo
+  examples: |
+    - nina msongo wa mawazo
+    - nina mambo mengi yanayonichangaya
+    - sielewi jinsi mambo yanavyoenda kichwani mwangu
+    - nina mawazo hadi nakosa usingizi
+    - Nashingwa kujizuia na mawazo mabaya
+    - Nakosa usingizi kuna mambo yananichanganya
+    
+- intent: mgonjwa
+  examples: | 
+    - sijisikii vizuri
+    - nahisi naumwa tumbo
+    - tumbo linaniuma
+    - najisikia maumivu ya kichwa
+    - mwili mzima unaniuma
+    - kichwa kinaniuma sana
+    - hali yangu sio nzuri
+    - afya inasumbua
+    - nina mafua makali sana
+    - Nina kikohozi
+    - Naumwa
+    - Nina kizunguzungu
+    - macho yananisumbua
+    - najisikia kichefuchefu
+    - najihisi kama nina malaria
+    - najisikia moyo unanienda mbio sana
+    - Najihisi siko sawa
+    
+- intent: msiba
+  examples: | 
+    - nimefiwa jamani
+    - baba yangu kafariki
+    - nimefiwa na mama yangu mzazi
+    - mama yangu amefariki
+    - nimefiwa na mume wangu
+    - nimefiwa na mtoto wangu
+    - nimepata msiba
+    - mjomba wangu ameaga dunia
+    - dada yangu hatupo nae tena
+    - baba ametutoka
+    - mpenzi wangu amekufa
+    - mama yangu ametutoka jamani
+    - Nimepata msiba
+    
+- intent: kwaheri
+  examples: |
+    - Bye
+    - kwaheri
+    - tutaonana
+    - tutaonana baadaye
+    - usiku mwema
+    - Siku njema
+    - Alamsik
+
+- intent: huduma
+  examples: | 
+    - mnatoa huduma gani?
+    - unaweza kufanya nini ?
+    - unaeza fanya nini?
+    - what can you help me with?
+    - what can you do ?
+    - what can you do for me?
+    - ni huduma gani ambazo mnatoa?
+    - huduma zenu ni zipi
+    - mna services gani?
+    - nataka kujua kuhusu huduma zenu
+    - mna huduma gani
+
+- intent: mawasiliano
+  examples: |  
+    - nataka kuwasiliana na daktari
+    - naweza kupata mawasiliano ya daktari?
+    - naomba namba ya daktari
+    - nataka kuongea na doctor
+    - nahitaji kuongea na mtaalamu
+    - nataka kuongea na mshauri
+    - nina shida ya kuongea na mshauri au mtaalamu
+    - nataka kuongea na mshauri au mtaalamu
+    - niunganishe na daktari au mtaalamu
+    - Naomba kuonana na daktari tafadhali
+
+- intent: wasiwasi
+  examples: | 
+    - nina wasiwasi sana
+    - nina wasiwasi uliopitiliza
+    - naogopa kuongea na watu
+    - naogopa kuendea sehemu zenye watu watu
+    - nina shituka sana ata kwenye vitu vidogo
+    - nina shutshwa sana ata na vitu vidogo
+    - nina wasiwasi isiyo ya kawaida
+    - nina ogopa kuongea mbele ya watu wengi
+    - Sijawahi kuwa na wasiwasi hivi
+
+- intent: laughing
+  examples: | 
+    - haha
+    - hahaha !
+    - teh teh teh
+    - ha ha ha
+    - unanichekesha
+    - unanichekesha haha
+    - hahahaha hahaha
+    - Uwii mbavu zangu
+    - Utaniua kwa kucheka
+    - Hapo kwanza ncheke mie
+
+- intent: language
+  examples: |
+   -Unaongea lugha zipi ?
+   - Lugha zipi unaongea ?
+   - lugha zipi unaweza kuongea ?
+   - Wafahamu lugha ngapi?
+   - unazungumza lugha gani
+
+- intent: boring
+  examples: |
+   - you're boring
+   - unaboa
+   - hauna akili
+   - haueleweki nimekuchoka
+   - Unanipotea muda
+   - unanipotezea time
+   - Sikuelewi hata kidogo
+   - Hueleweki
+   - Upo upo tu
+   - Huna mbele wala nyuma
+   - unakera
+
+- intent: kushangaa
+  examples: |
+    - Tobaaaa
+    - Yereeewiii
+    - Kiiru
+    - Heeee
+    - Achaaa
+    - Eboo
+    - Whaaaat!
+    - Niniii?
+    - Ati nini?
+    - Unasema!
+    - Atii!
+    - Jamani
+    - Weeee acha!!
+    - 🙆🏾‍♀️
+    - Mungu wangu 🙆🏾‍♀️
+    - Seriously...!!
+    - Mamaaaaaaaa
+    - Usinambie
+    - Don't tell me!!
+    - Weeeeeeee!!!
+
+- intent: doing
+  examples: |
+    - unafanya nini?
+    - unafanya nini saivi?
+    - unafanya kazi gani saivi?
+    - Uko bize na nini?
+    - What you upto?
+    - Busy?
+    - Uko bize?
+    - Umeajiriwa?
+    - Unajishughulisha na nini?
+    
+- intent: lives_where
+  examples: |
+    - Unaishi wapi?
+    - fatma wewe unaishi wapi?
+    - kwa saivi unaishi wapi?
+    - Je wewe unaishi wapi?
+    - maskani yako ni wapi?
+    - Unatokea wapi?
+
+- intent: believe_positive
+  examples: |
+    - Natumaini ivyo
+    - Naamini ivyo
+    - Mimi pia natumaini ivyo
+    - Naamini nitakuwa sawa tu
+    - Naamini nitafanikiwa
+    - Iko siku yatakwisha
+    - Nitafanya vizuri tu
+    - mimi pia 
+    - same wise as you
+    - same wise
+
+- intent: age
+  examples: | 
+    - Una miaka mingapi?
+    - Niambie umri wako
+    - Wewe una miaka mingapi?
+    - Je miaka yako  ni mingapi?
+    - How old are you?
+    - How old are you in years?
+    - How long have you been a alive?
+    - wewe una umri gani?
+    - Una umri gani?
+    - Umezaliwa mwaka gani?
+  
+- intent: youre_clever
+  examples: | 
+    - Una akili
+    - Una akili sana
+    - Una akili pia una fikiria
+    - Wewe ni kipanga
+    - I am so proud of you
+    - Nina jivunia sana wewe
+    - ninajivunia sana wewe
+    - una uwezo mkubwa wa kupambanua mambo
+    - you're amazing
+    - you're so smart
+    - you're so smart and smart
+    - Wewe ni genius
+    - Aiseee uko vizuri
+    - IQ yako ipo juu balaa
+
+- intent: agree
+  examples: |
+   - Natumaini
+   - Natumaini sana
+   - Natumaini pia
+   - Yes
+   - Yes, I agree
+   - Yes, I agree with you
+   - Ndio
+   - Ndio nakubali
+   - nakubaliana na wewe
+   - ni sahihi na kweli
+   - kweli
+   - Ni kweli
+
+- intent: happy
+  examples: |  
+   - Nimefurahi kusikia hivyo
+   - Nimerahi sana leo
+   - Leo nina furaha kama yote
+   - nina furaha ya kupitiliza
+   - I am very happy
+   - I am joyous
+   - Nina furaha iliyo zidi kipimo
+    
+

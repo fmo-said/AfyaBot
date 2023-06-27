@@ -1,0 +1,194 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: salamu path 1
+  steps:
+  - user: |
+      habari
+    intent: salamu
+  - action: utter_salamu
+  - user: |
+      salama
+    intent: mood_salamu_happy
+  - action: utter_salamu_happy
+
+- story: salamu path 2
+  steps:
+  - user: |
+      mbaya
+    intent: salamu_sad
+  - action: utter_salamu_sad
+  - user: |
+      nahisi nina stress
+    intent: huzuni
+  - action: utter_huzuni
+  - user: |
+      nina mambo mengi yanayonichanganya
+    intent: mawazo
+  - action: utter_mawazo
+
+- story: sick
+  steps:
+  - user: |
+      sijiskii vizuri
+    intent: mgonjwa
+  - action: utter_mgonjwa
+  - user: |
+      nimepata msiba
+    intent: msiba
+  - action: utter_msiba
+  - user: |
+      bye
+    intent: kwaheri
+  - action: utter_kwaheri
+
+- story: huduma
+  steps:
+  - user: |
+      mnatoa huduma gani
+    intent: huduma
+  - action: utter_huduma
+  - user: |
+      nataka kuwasiliana na daktari
+    intent: mood_mawasiliano
+  - action: utter_mawasiliano
+  - user: |
+      nina wasiwasi
+    intent: wasiwasi
+  - action: utter_wasiwasi
+
+- story: laughing
+  steps:
+  - user: |
+      hahaha !
+    intent: laughing
+  - action: utter_laughing
+  - user: |
+      unaboa
+    intent: boring
+  - action: utter_boring
+  - user: |
+      hapana
+    intent: deny
+  - action: utter_hapana
+
+- story: umri
+  steps:
+  - user: |
+      Una miaka mingapi
+    intent: age
+  - action: utter_age
+
+- story: kushangaa
+  steps:
+  - user: |
+      jamani
+    intent: kushangaa
+  - action: utter_kushangaa
+
+- story: youre_clever
+  steps:
+  - user: |
+      una akili
+    intent: youre_clever
+  - action: utter_youre_clever
+
+  - story: agree
+  steps:
+  - user: |
+      natumaini
+    intent: natumaini
+  - action: utter_agree
+
+  - story: happy
+  steps:
+  - user: |
+      nimefurahi kuskia hivyo
+    intent: happy
+  - action: utter_happy
+
+  - story: believe_positive
+  steps:
+  - user: |
+      Naamini ivyo
+    intent: believe_positive
+  - action: utter_believe_positive
+
+  - story: lives_where
+  steps:
+  - user: |
+      unaishi wapi
+    intent: lives_where
+  - action: utter_lives_where
+
+  - story: doing
+  steps:
+  - user: |
+      unafanya nini ?
+    intent: doing
+  - action: utter_doing
+
+  - story: language
+  steps:
+  - user: |
+      unaongea lugha zipi ?
+    intent: language
+  - action: utter_language
+
+  - story: mahusiano
+  steps:
+  - user: |
+      nimeachwa
+    intent: mahusiano
+  - action: utter_mahusiano
+
+  - story: gender
+  steps:
+  - user: |
+      jinsia yako ni ipi
+    intent: gender
+  - action: utter_gender
+
+  - story: maswali
+  steps:
+  - user: |
+      nini maana ya ?
+    intent: maswali
+  - action: utter_maswali
+
+  - story: nashukuru
+  steps:
+  - user: |
+      asante
+    intent: nashukuru
+  - action: utter_nashukuru
+
+  - story: tellme_a_story
+  steps:
+  - user: |
+      nambie
+    intent: tellme_a_story
+  - action: utter_tellme_a_story
+
+  - story: marry_you
+  steps:
+  - user: |
+      nataka nikuoe
+    intent: marry_you
+  - action: utter_marry_you
+
+    - story: creator
+  steps:
+  - user: |
+      nani aliye kutengeneza ?
+    intent: creator
+  - action: utter_creator
+
+    - story: nakupenda
+  steps:
+  - user: |
+      nakupenda
+    intent: nakupenda
+  - action: utter_nakupenda
+

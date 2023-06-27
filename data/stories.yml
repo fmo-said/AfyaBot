@@ -1,0 +1,150 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: salamu_happy
+  - action: utter_salamu_happy
+  - intent: laughing
+  - action: utter_laughing
+  - intent: happy
+  - action: utter_happy
+
+- story: salamu path 1
+  steps:
+  - intent: salamu
+  - action: utter_salamu
+  - intent: salamu_happy
+  - action: utter_salamu_happy
+
+- story: salamu path 2
+  steps:
+  - intent: salamu_sad
+  - action: utter_salamu_sad
+  
+- story: huzuni
+  steps:
+  - intent: huzuni
+  - action: utter_huzuni
+
+- story: mgonjwa
+  steps:
+  - intent: mgonjwa
+  - action: utter_mgonjwa
+
+- story: msiba
+  steps:
+  - intent: msiba
+  - action: utter_msiba
+
+- story: kwaheri
+  steps:
+  - intent: kwaheri
+  - action: utter_kwaheri
+
+- story: huduma
+  steps:
+  - intent: huduma
+  - action: utter_huduma
+
+- story: mawasiliano
+  steps:
+  - intent: mawasiliano
+  - action: utter_mawasiliano
+
+- story: laughing
+  steps:
+  - intent: laughing
+  - action: utter_laughing
+
+- story: language
+  steps:
+  - intent: language
+  - action: utter_language
+
+- story: boring
+  steps:
+  - intent: boring
+  - action: utter_boring
+
+- story: doing
+  steps:
+  - intent: doing
+  - action: utter_doing
+
+- story: lives_where
+  steps:
+  - intent: lives_where
+  - action: utter_lives_where
+
+- story: believe_positive  
+  steps:
+  - intent: believe_positive
+  - action: utter_believe_positive
+
+- story: age
+  steps:
+  - intent: age
+  - action: utter_age
+
+- story: youre_clever
+  steps:
+  - intent: youre_clever
+  - action: utter_youre_clever
+
+- story: agree
+  steps:
+  - intent: agree
+  - action: utter_agree
+
+- story: marry_you
+  steps:
+  - intent: marry_you
+  - action: utter_marry_you
+
+- story: tellme_a_story
+  steps:
+  - intent: tellme_a_story
+  - action: utter_tellme_a_story
+
+- story: gender
+  steps:
+  - intent: gender
+  - action: utter_gender
+
+- story: doing
+  steps:
+  - intent: doing
+  - action: utter_doing
+
+- story: mahusiano
+  steps:
+  - intent: mahusiano
+  - action: utter_mahusiano
+
+- story: maswali
+  steps:
+  - intent: maswali
+  - action: utter_maswali
+
+- story: nashukuru
+  steps:
+  - intent: nashukuru
+  - action: utter_nashukuru
+
+- story: happy
+  steps:
+  - intent: happy
+  - action: utter_happy
+
+- story: creator
+  steps:
+  - intent: creator
+  - action: utter_creator
+
+- story: nakupenda
+  steps:
+  - intent: nakupenda
+  - action: utter_nakupenda
+
